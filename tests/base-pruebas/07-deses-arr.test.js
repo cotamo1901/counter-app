@@ -6,7 +6,7 @@ describe("Pruebas 07-deses", () => {
   test("DEbe retornar un string y un numero", () => {
     const [letter,numbers] = retornaArreglo();
 
-    expect(letter).toBe('AB')
+    expect(letter).toBe('ABC')
     expect(numbers).toBe(123)
   });
 });
