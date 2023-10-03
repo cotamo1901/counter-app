@@ -2,6 +2,7 @@ import {
   getHeroeById,
   getHeroesByOwner,
 } from "../../src/base-pruebas/08-imp-exp";
+import heroes from "../../src/data/heroes";
 
 describe("pruebas en 08-imp-exp", () => {
   // test("getHeroeById debe retornar un heroe por ID", () => {
@@ -20,6 +21,13 @@ describe("pruebas en 08-imp-exp", () => {
 
 
     expect(hero.length).toBe(3);
+    expect(hero).toEqual( [
+      { id: 1, name: 'Batman', owner: 'DC' },
+      { id: 3, name: 'Superman', owner: 'DC' },
+      { id: 4, name: 'Flash', owner: 'DC' }
+    ])
+
+    // expect(heroes).toEqual(heroes.filter)
     console.log(hero)
     
   });
